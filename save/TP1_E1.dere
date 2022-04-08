@@ -19,7 +19,7 @@
   <Simple pk="0" cant3="2" type="integer" mult="0" cant2="0" parent="" name="Fecha" sk="0" cant1="20" optionSQL="1" null="0"/>
   <Simple pk="0" cant3="2" type="integer" mult="0" cant2="0" parent="" name="ImporteTotal" sk="0" cant1="20" optionSQL="1" null="0"/>
  </Entity>
- <Entity x="-240" y="99" isAssociative="0" subtype="0" name="PRODUCTO" width="60">
+ <Entity x="-248" y="105" isAssociative="0" subtype="0" name="PRODUCTO" width="60">
   <Simple pk="1" cant3="2" type="integer" mult="0" cant2="0" parent="" name="Codigo" sk="0" cant1="20" optionSQL="1" null="0"/>
   <Simple pk="0" cant3="2" type="integer" mult="0" cant2="0" parent="" name="Descripcion" sk="0" cant1="20" optionSQL="1" null="0"/>
   <Simple pk="0" cant3="2" type="integer" mult="0" cant2="0" parent="" name="PrecioCosto" sk="0" cant1="20" optionSQL="1" null="0"/>
