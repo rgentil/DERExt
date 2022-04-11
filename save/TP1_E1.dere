@@ -1,33 +1,30 @@
 <DERExt>
- <Entity x="-680" y="-207" isAssociative="0" subtype="0" name="CLIENTE" width="55">
-  <Simple pk="1" cant3="2" type="integer" mult="0" cant2="0" parent="" name="IdCliente" sk="0" cant1="20" optionSQL="1" null="0"/>
-  <Simple pk="0" cant3="2" type="integer" mult="0" cant2="0" parent="" name="Nombre" sk="0" cant1="20" optionSQL="1" null="0"/>
-  <Simple pk="0" cant3="2" type="integer" mult="0" cant2="0" parent="" name="Apellido" sk="0" cant1="20" optionSQL="1" null="0"/>
-  <Compound pk="0" amount="2" mult="0" parent="" name="Direccion" sk="0" optionSQL="1" null="0">
-   <Simple pk="0" cant3="2" type="integer" mult="0" cant2="0" parent="Direccion" name="Calle" sk="0" cant1="20" optionSQL="1" null="0"/>
-   <Simple pk="0" cant3="2" type="integer" mult="0" cant2="0" parent="Direccion" name="Puerta" sk="0" cant1="20" optionSQL="1" null="0"/>
+ <Entity x="-393" name="PRODUCTO" width="60" subtype="0" isAssociative="0" y="32">
+  <Simple pk="1" cant2="0" cant3="2" name="Codigo" optionSQL="1" mult="0" type="integer" cant1="20" null="0" sk="0" parent=""/>
+  <Simple pk="0" cant2="0" cant3="2" name="Descripcion" optionSQL="1" mult="0" type="integer" cant1="20" null="0" sk="0" parent=""/>
+  <Simple pk="0" cant2="0" cant3="2" name="PrecioCosto" optionSQL="1" mult="0" type="integer" cant1="20" null="0" sk="0" parent=""/>
+  <Simple pk="0" cant2="0" cant3="2" name="PrecioVenta" optionSQL="1" mult="0" type="integer" cant1="20" null="0" sk="0" parent=""/>
+ </Entity>
+ <Entity x="-14" name="FACTURA" width="55" subtype="0" isAssociative="0" y="-212">
+  <Compound pk="1" amount="2" name="id" optionSQL="1" mult="0" null="0" sk="0" parent="">
+   <Simple pk="0" cant2="0" cant3="2" name="Tipo" optionSQL="1" mult="0" type="integer" cant1="20" null="0" sk="0" parent="id"/>
+   <Simple pk="0" cant2="0" cant3="2" name="Nro" optionSQL="1" mult="0" type="integer" cant1="20" null="0" sk="0" parent="id"/>
   </Compound>
-  <Simple pk="0" cant3="2" type="integer" mult="1" cant2="0" parent="" name="Telefono" sk="0" cant1="20" optionSQL="1" null="0"/>
-  <Simple pk="0" cant3="2" type="integer" mult="0" cant2="0" parent="" name="FechaNacimiento" sk="0" cant1="20" optionSQL="1" null="1"/>
-  <Simple pk="0" cant3="2" type="integer" mult="1" cant2="0" parent="" name="Celular" sk="0" cant1="20" optionSQL="1" null="1"/>
+  <Simple pk="0" cant2="0" cant3="2" name="Fecha" optionSQL="1" mult="0" type="integer" cant1="20" null="0" sk="0" parent=""/>
+  <Simple pk="0" cant2="0" cant3="2" name="ImporteTotal" optionSQL="1" mult="0" type="integer" cant1="20" null="0" sk="0" parent=""/>
  </Entity>
- <Entity x="-14" y="-212" isAssociative="0" subtype="0" name="FACTURA" width="55">
-  <Compound pk="1" amount="2" mult="0" parent="" name="id" sk="0" optionSQL="1" null="0">
-   <Simple pk="0" cant3="2" type="integer" mult="0" cant2="0" parent="id" name="Tipo" sk="0" cant1="20" optionSQL="1" null="0"/>
-   <Simple pk="0" cant3="2" type="integer" mult="0" cant2="0" parent="id" name="Nro" sk="0" cant1="20" optionSQL="1" null="0"/>
+ <Entity x="-680" name="CLIENTE" width="55" subtype="0" isAssociative="0" y="-207">
+  <Simple pk="1" cant2="0" cant3="2" name="IdCliente" optionSQL="1" mult="0" type="integer" cant1="20" null="0" sk="0" parent=""/>
+  <Simple pk="0" cant2="0" cant3="2" name="Nombre" optionSQL="1" mult="0" type="integer" cant1="20" null="0" sk="0" parent=""/>
+  <Simple pk="0" cant2="0" cant3="2" name="Apellido" optionSQL="1" mult="0" type="integer" cant1="20" null="0" sk="0" parent=""/>
+  <Compound pk="0" amount="2" name="Direccion" optionSQL="1" mult="0" null="0" sk="0" parent="">
+   <Simple pk="0" cant2="0" cant3="2" name="Calle" optionSQL="1" mult="0" type="integer" cant1="20" null="0" sk="0" parent="Direccion"/>
+   <Simple pk="0" cant2="0" cant3="2" name="Puerta" optionSQL="1" mult="0" type="integer" cant1="20" null="0" sk="0" parent="Direccion"/>
   </Compound>
-  <Simple pk="0" cant3="2" type="integer" mult="0" cant2="0" parent="" name="Fecha" sk="0" cant1="20" optionSQL="1" null="0"/>
-  <Simple pk="0" cant3="2" type="integer" mult="0" cant2="0" parent="" name="ImporteTotal" sk="0" cant1="20" optionSQL="1" null="0"/>
+  <Simple pk="0" cant2="0" cant3="2" name="Telefono" optionSQL="1" mult="1" type="integer" cant1="20" null="0" sk="0" parent=""/>
+  <Simple pk="0" cant2="0" cant3="2" name="FechaNacimiento" optionSQL="1" mult="0" type="integer" cant1="20" null="1" sk="0" parent=""/>
+  <Simple pk="0" cant2="0" cant3="2" name="Celular" optionSQL="1" mult="1" type="integer" cant1="20" null="1" sk="0" parent=""/>
  </Entity>
- <Entity x="-248" y="105" isAssociative="0" subtype="0" name="PRODUCTO" width="60">
-  <Simple pk="1" cant3="2" type="integer" mult="0" cant2="0" parent="" name="Codigo" sk="0" cant1="20" optionSQL="1" null="0"/>
-  <Simple pk="0" cant3="2" type="integer" mult="0" cant2="0" parent="" name="Descripcion" sk="0" cant1="20" optionSQL="1" null="0"/>
-  <Simple pk="0" cant3="2" type="integer" mult="0" cant2="0" parent="" name="PrecioCosto" sk="0" cant1="20" optionSQL="1" null="0"/>
-  <Simple pk="0" cant3="2" type="integer" mult="0" cant2="0" parent="" name="PrecioVenta" sk="0" cant1="20" optionSQL="1" null="0"/>
- </Entity>
- <RBinary onDelete0="restrict" match1="simple" min0="1" onUpdate0="restrict" rolename="" max0="N" min1="0" dep="0" onDelete1="restrict" onUpdate1="restrict" x="-100" max1="N" firstWeak="0" match0="simple" y="-38" width="60" name="LA_INTEGRA" name0="PRODUCTO" name1="FACTURA">
-  <Simple pk="0" cant3="2" type="integer" mult="0" cant2="0" parent="" name="PrecioVenta" sk="0" cant1="20" optionSQL="1" null="0"/>
-  <Simple pk="0" cant3="2" type="integer" mult="0" cant2="0" parent="" name="Cantidad" sk="0" cant1="20" optionSQL="1" null="0"/>
- </RBinary>
- <RBinary onDelete0="restrict" match1="simple" min0="1" onUpdate0="restrict" rolename="" max0="1" min1="0" dep="0" onDelete1="restrict" onUpdate1="restrict" x="-320" max1="N" firstWeak="0" match0="simple" y="-189.5" width="40" name="TIENE" name0="CLIENTE" name1="FACTURA"/>
+ <RBinary x="-320" width="40" name0="CLIENTE" min1="0" onUpdate0="restrict" max1="N" max0="1" rolename="" onDelete0="restrict" min0="1" match0="simple" match1="simple" firstWeak="0" dep="0" onDelete1="restrict" name1="FACTURA" y="-189.5" name="TIENE" onUpdate1="restrict"/>
+ <RBinary x="-170" width="60" name0="PRODUCTO" min1="1" onUpdate0="restrict" max1="N" max0="N" rolename="" onDelete0="restrict" min0="1" match0="simple" match1="simple" firstWeak="0" dep="0" onDelete1="restrict" name1="FACTURA" y="-72" name="LA_INTEGRA" onUpdate1="restrict"/>
 </DERExt>

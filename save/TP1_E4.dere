@@ -1,0 +1,8 @@
+<DERExt>
+ <Entity x="-274" name="CUIDADOR" width="60" subtype="0" isAssociative="0" y="82"/>
+ <Entity x="-280" name="INSTITUCION" width="75" subtype="0" isAssociative="0" y="-150"/>
+ <Entity x="-703" name="NINIO" width="45" subtype="0" isAssociative="0" y="-156"/>
+ <RTernary x="-519" name0="NINIO" width="55" min1="1" onUpdate0="restrict" max1="N" max0="N" onDelete0="restrict" onUpdate2="restrict" min0="1" match0="simple" match1="simple" match2="simple" name2="CUIDADOR" onDelete2="restrict" onDelete1="restrict" name1="INSTITUCION" min2="1" y="36" max2="N" name="escuidado" onUpdate1="restrict"/>
+ <RBinary x="-471" width="40" name0="NINIO" min1="0" onUpdate0="restrict" max1="1" max0="N" rolename="" onDelete0="restrict" min0="0" match0="simple" match1="simple" firstWeak="0" dep="0" onDelete1="restrict" name1="INSTITUCION" y="-134" name="esta" onUpdate1="restrict"/>
+ <RBinary x="-246" width="40" name0="CUIDADOR" min1="1" onUpdate0="restrict" max1="1" max0="N" rolename="" onDelete0="restrict" min0="1" match0="simple" match1="simple" firstWeak="0" dep="0" onDelete1="restrict" name1="INSTITUCION" y="-18" name="trabaja" onUpdate1="restrict"/>
+</DERExt>
